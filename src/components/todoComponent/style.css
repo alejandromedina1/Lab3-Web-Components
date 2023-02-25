@@ -1,0 +1,30 @@
+div {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFA3FD;
+    width: 400px;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8px;
+    border-radius: 8px;
+}
+
+.to-do-checkbox{
+    width: 20px;
+    height: 20px;
+    border-style: none;
+}
+
+p{
+    text-decoration-line: none;
+}
+
+div:has(.to-do-checkbox:checked){
+    background-color: #865DFF;
+    
+}
+.to-do-checkbox:checked + p{
+    text-decoration-line: line-through;
+    color: #FFA3FD;
+}
